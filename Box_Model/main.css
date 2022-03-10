@@ -1,26 +1,75 @@
+* {
+  /* Overriding browser defaults */
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 #product-overview {
-    background: #ff1b68;
-    padding: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    margin: 20px;
+  background: #ff1b68;
+  padding: 30px;
+
+  height: 528px;
+  width: 100%;
 }
 
 .section-title {
-    color: #2ddf5c;
+  color: #2ddf5c;
 }
 
 #product-overview h1 {
-    color: white;
-    font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: "Anton", sans-serif;
 }
 
 /* h1 {
     font-family: sans-serif;
 } */
+
+.main-header {
+  background-color: rgb(18, 179, 152);
+  padding: 14px 14px;
+
+  width: 100%;
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 70px);
+  vertical-align: middle;
+}
+
+.main-header__brand {
+    list-style: none;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-nav__lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list  {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+ 
+  font-size: 15px;
+  margin: 0 16px;
+}
+
+.main-nav__list a {
+    text-decoration: none;
+}
