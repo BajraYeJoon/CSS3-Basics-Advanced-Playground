@@ -9,7 +9,7 @@ body {
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: url("freedom.jpg");
   padding: 30px;
 
   height: 528px;
@@ -43,16 +43,17 @@ body {
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 70px);
+  width: calc(100% - 81px);
   vertical-align: middle;
 }
 
 .main-header__brand {
-    list-style: none;
-    color: yellow;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
+  list-style: none;
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .main-nav__lists {
@@ -61,15 +62,40 @@ body {
   list-style: none;
 }
 
-.main-nav__list  {
+.main-nav__list {
   display: inline-block;
   list-style: none;
   text-decoration: none;
- 
+
   font-size: 15px;
   margin: 0 16px;
 }
 
 .main-nav__list a {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(17, 94, 17);
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+/* Grouping css */
+.main-nav__list a:hover,
+.main-nav__list a:active {
+  cursor: pointer;
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background-color: red;
+  padding: 9px 15px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: red;
+  background: white;
+  border: none;
 }
