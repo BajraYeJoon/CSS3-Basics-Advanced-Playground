@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  margin-bottom: 16px;
+  background: #fa923f;
+  padding: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+a.active {
+  color: rgb(53, 21, 26);
+}
+
+/* not used widely */
+
+a:not(.active) {
+  color: rgb(7, 3, 3);
+}
+
+.main-section {
+  height: 800px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.highlight {
+  border: 2px solid blue;
+}
