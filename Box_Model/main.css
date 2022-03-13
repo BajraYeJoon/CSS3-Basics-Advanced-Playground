@@ -15,7 +15,7 @@ body {
   /* linear gradient - (from top to bottom or opp, or left bottom and so on also deg)direction vertical( top to bottom )  */
   /* background-image: linear-gradient(to bottom, red, rgba(44, 22, 22, 0.575)); */
    
-  background-image: radial-gradient(circle at top left, red, rgb(214, 94, 86), rgb(192, 140, 72));
+  /* background-image: radial-gradient(circle at top left, red, rgb(214, 94, 86), rgb(192, 140, 72)); */
 
   /* background - url , position / size  repeat origin and clip*/
  
@@ -130,6 +130,7 @@ body {
   height: 130px;
   /* horizontally center the image  */
   margin: auto;
+  padding: 19px;
 }
 
 #host-feature ul {
