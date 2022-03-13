@@ -25,6 +25,12 @@ body {
   color: white;
   font-family: "Anton", sans-serif;
 }
+.main-plan__card {
+   width: 80%;
+   margin: auto;
+   text-align: center;
+
+}
 .main-plan__card ul {
   list-style: none;
   padding: 2px;
