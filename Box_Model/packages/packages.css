@@ -1,20 +1,72 @@
+main {
+    padding-top: 32px;
+}
+
 .pack-section {
-    border: 3px solid black;
-    margin-top: 15px;
     width: 80%;
-    padding: 20px 30px;
-    background: rgb(140, 199, 140);
+    border: 3px solid rgb(3, 59, 24);
+    border-left: none;
+    margin: 15px 0;
+}
+
+.pack-section:hover,
+.pack-section:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.568);
+    border-color: red;
+
 }
 
 .pack-section a {
+    display: block;
+    color: inherit;
+    padding: 30px;
     text-decoration: none;
 }
-.pack-head {
-    color: black;
-    font-weight: bold;
+
+.pack-sub {
+    color: grey
+
 }
 
-.pack-highlight {
+.pack-para {
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 18px;
+    color : rgb(9, 66, 9);
+    background: rgb(255, 255, 255);
+}
+
+#plus {
+    background: rgba(178, 240, 154, 0.932);
+}
+
+
+#free {
+    background: rgba(167, 207, 169, 0.849);
+    float: right;
+    border-left: 3px solid black;
+    border-right: none;
+    text-align: right;
+
+}
+
+#free:hover,#free:active {
+    border-left-color: red;
+}
+
+
+.float-fix {
+    clear: both;
+}
+
+#prem {
+    background: rgb(23, 82, 10);
+}
+
+#prem .pack-head {
     color: white;
 }
 
+#prem .pack-sub {
+    color: #b8b8b8;
+}
