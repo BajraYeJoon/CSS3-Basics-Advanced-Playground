@@ -38,6 +38,7 @@ body {
   top:0;
   left: 0;
   z-index: 1;
+
 }
 .main-header > div {
   display: inline-block;
@@ -57,7 +58,13 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 10px;
+  height: 20px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  height: 100%;
+  margin-left: 45px;
 }
 
 .main-nav__lists {
