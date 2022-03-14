@@ -56,10 +56,32 @@ body {
   vertical-align: middle;
 }
 
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 81px);
+  width: calc(100% - 150px);
   vertical-align: middle;
 }
 
@@ -71,6 +93,7 @@ body {
   font-size: 20px;
   height: 20px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
