@@ -9,8 +9,8 @@ body {
 }
 
 #product-overview {
-  margin-top: 50px;
-  background: url("./images/freedom.jpg") left 10% bottom 70% /cover no-repeat border-box;
+  margin-top: 60px;
+  background: url("./images/freedom.jpg") left 0% bottom 20% /cover no-repeat border-box;
 
   /* linear gradient - (from top to bottom or opp, or left bottom and so on also deg)direction vertical( top to bottom )  */
   /* background-image: linear-gradient(to bottom, red, rgba(44, 22, 22, 0.575)); */
@@ -31,8 +31,31 @@ body {
   background-clip: border-box; */
   padding: 30px;
   position: relative;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
+}
+
+
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem ){
+  #product-overview {
+    height: 70vh;
+    background-position: 50% 25%;
+  }
+
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
 
 .section-title {
@@ -40,13 +63,7 @@ body {
   text-align: center;
 }
 
-#product-overview h1 {
-  color: white;
-  font-family: "Anton", sans-serif;
-  position: absolute;
-  bottom: 5%;
-  left: 3%;
-}
+
 .main-plan__card {
   width: 80%;
   margin: auto;
@@ -66,13 +83,32 @@ body {
   background-color: rgb(155, 223, 88);
   text-align: center;
   padding: 15px;
-  margin: 8px;
+  margin: 8px 0;
   display: inline-block;
-  width: 30%;
+  width: 100%;
   border-radius: 10px;
 
   /* makes anything aligns in the straight middle */
   vertical-align: middle;
+}
+
+@media (min-width: 40rem) {
+  .main-plan__card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlight {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .plan--highlight {
@@ -117,6 +153,18 @@ body {
   padding: 20px;
 }
 
+@media (min-width: 40rem) {
+  .host__feature{
+    display: inline-block;
+    width: 100%;
+    max-width: 45rem;
+    vertical-align: middle;
+    min-width: 15rem;
+  }
+}
+
+
+
 #host-feature .section-title {
   color: #d5dfd8;
   margin: 30px;
@@ -153,6 +201,7 @@ body {
   font-size: 20px;
   color: white;
 }
+
 
 .modal {
   position: fixed;
