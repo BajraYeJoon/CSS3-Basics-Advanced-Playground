@@ -10,7 +10,7 @@ body {
 
 #product-overview {
   margin-top: 50px;
-  background: url("./images/freedom.jpg") left 10% bottom 20% /cover no-repeat border-box;
+  background: url("./images/freedom.jpg") left 10% bottom 70% /cover no-repeat border-box;
 
   /* linear gradient - (from top to bottom or opp, or left bottom and so on also deg)direction vertical( top to bottom )  */
   /* background-image: linear-gradient(to bottom, red, rgba(44, 22, 22, 0.575)); */
@@ -31,8 +31,8 @@ body {
   background-clip: border-box; */
   padding: 30px;
   position: relative;
-  height: 528px;
-  width: 100%;
+  height: 40vh;
+  width: 100vw;
 }
 
 .section-title {
@@ -152,4 +152,48 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: white;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 
+  
+}
+
+.modal-title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--no {
+  background: red;
+  border-color: red;
 }
