@@ -54,6 +54,7 @@ body {
 .main-header > div {
   display: inline-block;
   vertical-align: middle;
+  
 }
 
 .toggle-button {
@@ -71,11 +72,11 @@ body {
 }
 
 .toggle-button__bar {
-  width: 100%;
+  width: 79%;
   height: 0.2rem;
   background: black;
   display: block;
-  margin: 0.6rem 0;
+  margin: 0.35rem 0;
 }
 
 .main-nav {
@@ -98,7 +99,7 @@ body {
 
 .main-header__brand img {
   height: 100%;
-  margin-left: 45px;
+  margin-left: 15px;
 }
 
 .main-nav__lists {
@@ -201,4 +202,8 @@ body {
 
 .mobile-nav__item a {
   font-size: 1.5rem;
+}
+
+.open {
+  display: block !important ; 
 }
