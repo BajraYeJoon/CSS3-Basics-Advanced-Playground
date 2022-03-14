@@ -1,5 +1,5 @@
 .testimonial {
-  font-size: 20px;
+  font-size: 1.2em;
   margin: 48px 0;
 }
 
@@ -17,12 +17,11 @@
   display: inline-block;
   vertical-align: middle;
   box-shadow: 3px 3px 5px 3px rgba(51, 49, 49, 0.329);
-
 }
 
 .testimonial__image {
-   width: 100%;
-   vertical-align: top;
+  width: 100%;
+  vertical-align: top;
 }
 
 .testimonial__info {
@@ -44,11 +43,13 @@
 .testimonial__name {
   margin: 3px;
   color: #ff5454;
+  /* 2 times root element */
+  font-size: 2rem;
 }
 
 .testimonial__subtitle {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
