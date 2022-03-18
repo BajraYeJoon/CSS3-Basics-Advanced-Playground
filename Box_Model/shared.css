@@ -86,6 +86,12 @@ body {
   vertical-align: middle;
 }
 
+@media (max-width:36.2rem) {
+  .main-nav {
+    display: none;
+  }
+}
+
 .main-header__brand {
   list-style: none;
   color: yellow;
