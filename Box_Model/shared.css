@@ -58,6 +58,7 @@ body {
 }
 
 .toggle-button {
+  display: none;
   width: 3rem;
   background: transparent;
   border: none;
@@ -66,6 +67,13 @@ body {
   padding-bottom: 0;
   vertical-align: middle;
 }
+
+@media (max-width:40rem){
+  .toggle-button{
+    display: inline-block;
+  }
+}
+
 
 .toggle-button:focus {
   outline: none;
