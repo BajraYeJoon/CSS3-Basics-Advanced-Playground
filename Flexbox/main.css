@@ -6,6 +6,7 @@
 html {
     background: #b3b3b3;
     padding: 5px;
+  
 }
 
 body {
@@ -18,9 +19,14 @@ body {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 900px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* flex-flow: row wrap */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 
 .item-1 {

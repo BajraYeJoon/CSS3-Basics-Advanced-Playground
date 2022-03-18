@@ -95,19 +95,25 @@ body {
 @media (min-width: 40rem) {
   .main-plan__card {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .plan {
-    display: inline-block;
+    display: flex;
     width: 30%;
-    vertical-align: middle;
+    flex-direction: column;
     min-width: 13rem;
     max-width: 25rem;
+    justify-content: space-between;
+    height: 28rem;
   }
 
   .plan--highlight {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 10;
   }
 }
 
@@ -151,17 +157,10 @@ body {
   background: rgb(207, 21, 21);
   margin-top: 30px;
   padding: 20px;
+  
 }
 
-@media (min-width: 40rem) {
-  .host__feature{
-    display: inline-block;
-    width: 100%;
-    max-width: 45rem;
-    vertical-align: middle;
-    min-width: 15rem;
-  }
-}
+
 
 
 
@@ -179,27 +178,38 @@ body {
   /* horizontally center the image  */
   margin: auto;
   padding: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #host-feature ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #host-feature li {
-  display: inline-block;
+  
   padding: 0px 20px;
   width: 33%;
-  text-align: center;
-  vertical-align: top;
+  
+  
 }
 
 #host-feature p {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-weight: bold;
   font-size: 20px;
   color: white;
+  white-space: nowrap;
+  
 }
 
 
@@ -245,4 +255,26 @@ body {
 .modal__action--no {
   background: red;
   border-color: red;
+}
+
+@media (min-width: 40rem) {
+  .host__feature{
+    display: inline-block;
+    width: 100%;
+    max-width: 45rem;
+    vertical-align: middle;
+    min-width: 15rem;
+  }
+
+  #host-feature ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #host-feature p {
+    white-space: normal;
+  }
 }
