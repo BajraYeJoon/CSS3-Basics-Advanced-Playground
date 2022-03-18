@@ -79,6 +79,11 @@ body {
   margin: 0.35rem 0;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  background: grey;
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;

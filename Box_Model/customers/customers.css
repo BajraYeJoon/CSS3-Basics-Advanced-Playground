@@ -51,6 +51,7 @@
   margin: 0;
   font-size: 1.1rem;
   color: #ccc;
+  /* letter-spacing: 10px; */
 }
 
 .testimonial__subtitle a {
@@ -65,4 +66,7 @@
 
 .testimonial__text {
   margin: 3px;
+  white-space: normal;
 }
+
+

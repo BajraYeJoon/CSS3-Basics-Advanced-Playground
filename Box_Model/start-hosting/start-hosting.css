@@ -75,6 +75,8 @@ main {
   margin-top: 1rem;
 }
 
+
+
 @media (min-width: 40rem) {
   .signup-form {
     margin: auto;
