@@ -1,27 +1,46 @@
 .container {
-    margin: 20px;
-    display: grid;
-    /* 3 columns with width  1 fr triggers when there are other element and put it in the remaining space*/
-    grid-template-columns: 200px 150px 20% 1fr;
-    grid-template-rows: 5rem auto;
+  margin: 20px;
+  display: grid;
+  height: 500px;
+  /* 3 columns with width  1 fr triggers when there are other element and put it in the remaining space*/
+  /* grid-template-columns: 200px 150px 20% 1fr; */
+  grid-template-columns: repeat(4, [col-start] 25% [col-end]) ;
+  /* grid-template-rows: 5rem auto; */
+  grid-template-rows: [row-1-start] 5rem [row-1-end] minmax(10px, 200px) 100px ;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header header header" "side side main side" "footer footer footer footer";
+
+  /* grid-gap: row column */
 }
 
 .el1 {
-    background: rgba(255, 154, 72, 0.5);
+  background: rgba(255, 154, 72, 0.5);
+  grid-column: col-start 1 / col-end 2;
 }
 
 .el2 {
-    background: rgba(255, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.5);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  /* grid-area: main; */
 }
 
 .el3 {
-    background: rgba(0, 128, 0, 0.5);
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  background: #00800080;
+  grid-column-start: 2; 
+  /* grid-column: 2 / span 3  */
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /* grid-area: grid-row / grid-column-start / grid-row-end / grid-column-end */
+
+  /* grid-area: header;
+*/
 }
 
 .el4 {
-    background: rgba(0, 4, 255, 0.5);
+  background: rgba(0, 4, 255, 0.5);
+  /* grid-area: footer; */
 }
