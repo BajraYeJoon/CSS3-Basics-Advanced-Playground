@@ -5,6 +5,7 @@ var modalNoButton = document.querySelector(".modal__action--no");
 var toggler = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
 
+
 console.dir(planButtons);
 
 for (var i = 0; i < planButtons.length; i++) {
@@ -44,3 +45,4 @@ toggler.addEventListener("click", () => {
   mobileNav.classList.add("open");
   backdrop.classList.add("open");
 });
+
