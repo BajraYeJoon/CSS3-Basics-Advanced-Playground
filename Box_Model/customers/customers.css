@@ -1,6 +1,9 @@
 .testimonial {
   font-size: 1.2em;
   margin: 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .testimonial__list {
