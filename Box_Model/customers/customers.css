@@ -17,14 +17,18 @@
 
 .testimonial__image-container {
   width: 65%;
-  display: inline-block;
-  vertical-align: middle;
+  /* display: inline-block;
+  vertical-align: middle; */
   box-shadow: 3px 3px 5px 3px rgba(51, 49, 49, 0.329);
+  transform: skewX(20deg);
+  overflow: hidden;
 }
 
 .testimonial__image {
   width: 100%;
   vertical-align: top;
+  transform: skew(-20deg) scale(1.3);
+
 }
 
 .testimonial__info {
