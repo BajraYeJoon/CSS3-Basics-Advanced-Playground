@@ -1,0 +1,39 @@
+.container {
+    margin: 150px auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    perspective-origin: 500px;
+    position: relative;
+    transform: rotateY(180deg);
+    /* container will be hidden but the content will be visible */
+    transform-style: preserve-3d;
+
+}
+
+.box1 {
+    background: red;
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(30deg) rotateY(70deg) rotateZ(30deg);
+    color: white;
+    text-align: center;
+    /* after the mirroring it will hide the element  */
+    /* backface-visibility: hidden; */
+}
+
+
+
+.box2 {
+    position: absolute;
+    background: rgb(27, 25, 143);
+    width: 100%;
+    height: 100%;
+    transform: translateZ(10rem) rotateX(60deg) rotateY(70deg) rotateZ(30deg);
+    
+    color: white;
+    text-align: center;
+   
+}
